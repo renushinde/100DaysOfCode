@@ -24,4 +24,19 @@ let arr1 = ["artichoke", "asparagus", "celery"];
 let arr2 = ["apple", "berry", "cherry"];
 
 let arr3 = arr1.concat(arr2);
-console.log("New array with sorted elements " + arr3.sort());
+console.log("New array with sorted elements: " + arr3.sort());
+
+
+// 3. Write a function called sumNumbers that accepts a single array of numbers and returns the sum of the numbers in the array.If the array is empty, return 0 (zero).
+
+function sum (arr) {
+  let total = 0;
+  for (let i =0; i < arr.length; i++) {
+    if(arr.length === 0) return false;
+    else {
+      total += arr[i];
+    }
+  }
+  return total;
+}
+console.log("The sum of array is: " + sum([5,10]));
