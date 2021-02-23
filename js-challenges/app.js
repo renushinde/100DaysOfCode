@@ -66,3 +66,16 @@ function reverse (str) {
   return reverseStr.toUpperCase();
 }
 console.log("The reversed Uppercased string is " +reverse("hello"));
+
+/* Another way */
+
+function reverseWithFor (str) {
+let newStr = "";
+for (let i = str.length -1; i >=0; i--) {
+  newStr +=str[i];
+}
+return newStr.toUpperCase();
+
+}
+
+console.log(reverseWithFor("Hello"));
