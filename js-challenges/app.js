@@ -94,3 +94,16 @@ for ( let i =0; i< 101; i ++) {
     console.log(i);
   }
 }
+
+// Remove Ends
+
+function removeEnds(str) {
+  if(str.length <3) return "";
+  let newStr = "";
+  for ( let i =0; i < str.length; i ++) {
+    newStr = str.slice(1,str.length-1);
+  }
+  return newStr;
+}
+
+console.log("The removed string is ", removeEnds("Renu Shinde"))
