@@ -113,13 +113,14 @@ console.log("The removed string is ", removeEnds("Renu Shinde"));
 function charCount(str) {
   let charObj = {};
   for (let i = 0; i < str.length; i++) {
-    if(charObj.includes(str[i])) {
-      charObj++;
+    if(str[i] in charObj) { // if character is found within a string
+      charObj[str[i]]++;
     } else {
-      charObj[str[i]] = 1
+      charObj[str[i]] = 1; 
     }
-    return charObj;
+   
   }
+  return charObj;
 }
 
 console.log("The characters in a string are: ", charCount("hello"));
