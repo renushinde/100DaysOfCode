@@ -106,4 +106,20 @@ function removeEnds(str) {
   return newStr;
 }
 
-console.log("The removed string is ", removeEnds("Renu Shinde"))
+console.log("The removed string is ", removeEnds("Renu Shinde"));
+
+// Character counting in a string
+
+function charCount(str) {
+  let charObj = {};
+  for (let i = 0; i < str.length; i++) {
+    if(charObj.includes(str[i])) {
+      charObj++;
+    } else {
+      charObj[str[i]] = 1
+    }
+    return charObj;
+  }
+}
+
+console.log("The characters in a string are: ", charCount("hello"));
