@@ -124,3 +124,28 @@ function charCount(str) {
 }
 
 console.log("The characters in a string are: ", charCount("hello"));
+
+// Find occurance of maximum character in a string. 
+
+function maxChar(str) {
+  let charObj1 = {};
+  let max = 0;
+  let maxChar = "";
+  for ( let i = 0; i < str.length; i ++ ) {
+    if (str[i] in charObj1) {
+      charObj1[str[i]]++;
+    } else {
+      charObj1[str[i]] = 1;
+    }
+  }
+  //return charObj1;
+  for ( let i in charObj1) {
+    if (charObj1[i] > max) {
+      max = charObj1[i];
+      maxChar = i;
+    }
+  }
+  return maxChar;
+}
+
+console.log("The maximum character in a string is : ", maxChar("renuu"));
