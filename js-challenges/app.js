@@ -139,13 +139,19 @@ function maxChar(str) {
     }
   }
   //return charObj1;
-  for ( let i in charObj1) {
-    if (charObj1[i] > max) {
-      max = charObj1[i];
-      maxChar = i;
+  for ( let char in charObj1) {
+    if (charObj1[char] > max) {
+      max = charObj1[char];
+      maxChar = char;
     }
   }
   return maxChar;
 }
 
 console.log("The maximum character in a string is : ", maxChar("renuu"));
+
+// Format with Padding
+
+function formatWithPadding(num, str, ) {
+
+}
