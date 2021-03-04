@@ -81,7 +81,7 @@ header a:hover {
   
   .topnav a:hover {
     background-color: #e8491d;
-    color: black;
+    color: white;
   }
   
   .topnav a.active {
@@ -154,16 +154,16 @@ header a:hover {
 
 #showcase p {
     font-size: 20px;
+    color: white;
 }
 
 .middle-text {
-   padding-left: 15px;
+   padding-left:15px;
    padding-top: 15px;
+   
 }
-.box {
-    display: grid;
-}
-#boxes {
+
+/* #boxes {
     margin-top: 20px;
 }
 
@@ -179,11 +179,56 @@ header a:hover {
     width: 50%;
 
 }
-
-.footer {
-    padding: 20px;
-    margin-top: 20px;
-    color: white;
-    background-color:#e8491d;
+ */
+ img {
+     width: 120px;
+ }
+.column {
+    margin-top: 25px;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 125px; 
     text-align: center;
-}
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 66vh;
+
+     /* background-color: violet; */
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .btn {
+      margin-top: 15px;
+      margin-bottom: 2px;
+
+     /* background-color: violet; */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    hr {
+        margin-top: 15px;
+        margin-bottom: 1px;
+
+     /* background-color: violet; */
+    }
+  }
+  hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(226, 1, 1, 0.952), rgba(226, 19, 19, 0.75), rgba(193, 26, 226, 0));
+  }
