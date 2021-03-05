@@ -313,7 +313,7 @@ header a:hover {
     padding: 10px;
   }
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes a two column-layout instead of four columns ******/
   @media screen and (max-width: 900px) {
     .portfolio-column {
       width: 50%;
