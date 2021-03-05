@@ -19,6 +19,11 @@ a {
     margin: auto;
     overflow: hidden;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
 
 header {
     background: #35424a;
@@ -108,6 +113,7 @@ header a:hover {
       right: 0;
       top: 0;
     }
+    
     .topnav.responsive a {
       float: none;
       display: block;
@@ -232,6 +238,8 @@ header a:hover {
     height: 1px;
     background-image: linear-gradient(to right, rgba(226, 1, 1, 0.952), rgba(226, 19, 19, 0.75), rgba(193, 26, 226, 0));
   }
+
+ /*  COUNTERS */
 .counters {
     margin-top: 26px;
 	background: #35424a;
@@ -263,3 +271,116 @@ header a:hover {
 		padding-bottom: 20px;
 	}
 }
+
+.cta {
+    height: 200px;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 400;
+}
+/* PORTFOLIO IMAGES */
+.main-portfolio {
+    max-width: 95vh;
+    margin: auto;
+  }
+  
+  .portfolio-row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .portfolio-row,
+  .portfolio-row > .portfolio-column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .portfolio-column {
+    float: left;
+    width: 33%;
+  }
+  
+  /* Clear floats after rows */
+  .portfolio-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .portfolio-content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .portfolio-column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .portfolio-column {
+      width: 100%;
+    }
+  }
+
+  .portfolio-image {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+.portfolio-image:hover{
+    opacity: 0.5;
+}
+
+/*   FOOTER */
+footer {
+    background-color: #35424a;
+    text-align: center;
+    padding: 15px;
+    height: 200px ;
+}
+
+ #facebook {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25%;
+  } 
+  
+  #facebook:hover {
+     color: #e8491d;
+  } 
+  #twitter {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25%;
+  } 
+  
+  #twitter:hover {
+     color: #e8491d;
+  } 
+  
+  /* Facebook */
+  .fa-facebook {
+    /* background: #e8491d; */
+    color: white;
+    text-align: center;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+   /*  background: #e8491d; */
+    color: white;
+    text-align: center;
+  }
+
+  
